@@ -14,8 +14,25 @@ ifdef::backend-html5[]
 // print the toc here (not at the default position)
 //toc::[]
 
-== Header 1
+== Allgemeine LXC-Container Configurationen
 
+
+----
+adduser me <.>
+usermod -aG sudo me <.>
+groups me <.>
+----
+
+<.> anlegen eines neuen Users
+
+image::adduser.jpg[]
+<.> den user me in das sudoers file schreiben
+
+image::usermod.jpg[]
+<.> checken ob me im file steht
+
+image::groups.jpg[]
 
 === Header 2
+
 
