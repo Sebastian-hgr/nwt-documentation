@@ -50,7 +50,8 @@ image::groups.jpg[]
 
 == Installation von Pihole
 * für eine ausführliche pihole dokumentation siehe https://pi-hole.net/
-* LXC Container erstellen: <<Allgemeine LXC-Container Configurationen>>
+* LXC Container mit der ip adresse 10.9.8.107 erstellen: <<Allgemeine LXC-Container Configurationen>>
+
 * curl installieren
 ----
 sudo apt update && sudo apt upgrade
@@ -60,6 +61,13 @@ sudo apt install curl
 ----
 curl -sSL https://install.pi-hole.net | bash
 ----
+. wähle deine Netzwerkschnittstelle
+. wähle deinen beforzugten DNS server
+. wähle die default Optionen
+. notiere am Ende das Passwort
+Nun ist der Pihole im webrowser unter /admin/ aufrufbar in unserem Fall http://10.9.8.107/admin/index.php[http://10.9.8.107/admin/index.php]
+
+
 
 
 == Installation von Nginx
